@@ -1,0 +1,29 @@
+
+### Get all tasks
+GET http://localhost:3000/api/v1/tasks
+
+### Create a task
+POST http://localhost:3000/api/v1/tasks
+Content-Type: application/json
+
+{
+  "name": "task to update"
+}
+
+### Get a single task
+GET http://localhost:3000/api/v1/tasks/shakeAndBake
+
+### Update a task
+PATCH http://localhost:3000/api/v1/tasks/661125b05fa8203ae4fec84f
+Content-Type: application/json
+
+{
+  "name": "task updated",
+  "completed": true
+}
+
+### Delete a task
+DELETE http://localhost:3000/api/v1/tasks/66112321730d7c3628e56c26
+
+### Testing middlewares
+GET http://localhost:3000/route-not-found
